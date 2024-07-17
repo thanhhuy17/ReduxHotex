@@ -17,3 +17,10 @@ export const searchTextChange = (text) => {
     payload: text,
   };
 };
+
+export const statusFilterChange = (status) => {
+  return {
+    type: "filters/statusFilterChange",
+    payload: status,
+  };
+};
