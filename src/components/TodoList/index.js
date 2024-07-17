@@ -17,7 +17,7 @@ export default function TodoList() {
   const handleAddBtnClick = () => {
     dispatch(
       addTodo({
-        id: todoList.length + 1,
+        id: uuidV4,
         name: todoName,
         completed: false,
         priority: priority,

@@ -4,9 +4,16 @@
 // }
 
 //nen dung action creater
-export const addTodo = (data)=>{
-    return{
-        type: 'todoList/addTodo',
-        payload: data
-    }
-}
+export const addTodo = (data) => {
+  return {
+    type: "todoList/addTodo",
+    payload: data,
+  };
+};
+
+export const searchTextChange = (text) => {
+  return {
+    type: "filters/searchFilterChange",
+    payload: text,
+  };
+};
