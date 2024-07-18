@@ -21,10 +21,15 @@ export const filterSliceReducer = (state = initState, action) => {
         ...state,
         search: action.payload,
       };
-      case "filters/statusFilterChange":
+    case "filters/statusFilterChange":
       return {
         ...state,
-        search: action.payload,
+        status: action.payload,
+      };
+    case "filters/prioritiesFilterChange":
+      return {
+        ...state,
+        priority: action.payload,
       };
     default:
       return state;

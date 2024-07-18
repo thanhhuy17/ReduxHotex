@@ -42,7 +42,15 @@ export default function TodoList() {
 
   const renderTodo = () => {
     return todoList?.map((todo) => {
-      return <Todo key={todo.id} name={todo.name} completed={todo.completed} priority={todo.priority} />;
+      return (
+        <Todo
+          key={todo.id}
+          id={todo.id}
+          name={todo.name}
+          completed={todo.completed}
+          priority={todo.priority}
+        />
+      );
     });
   };
   return (
